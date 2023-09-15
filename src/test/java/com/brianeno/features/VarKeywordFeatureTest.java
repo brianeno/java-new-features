@@ -12,11 +12,11 @@ import org.junit.jupiter.api.Test;
         - cannot be a method parameter or return types
 
  */
-public class VarKeywordTest {
+public class VarKeywordFeatureTest {
 
     @Test
     public void testFeature() {
-        VarKeyword vk = new VarKeyword();
-        vk.runFeature();
+        VarKeywordFeature feature = new VarKeywordFeature();
+        feature.runFeature();
     }
 }

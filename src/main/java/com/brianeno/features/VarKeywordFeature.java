@@ -1,15 +1,19 @@
 package com.brianeno.features;
 
-public class VarKeyword {
+import com.brianeno.features.model.DirectoryProcessor;
+import com.brianeno.features.model.FileProcessor;
+import com.brianeno.features.model.Processor;
+
+public class VarKeywordFeature {
 
     // this is not allowed as class variable
     //var i = 1300;
 
     // var cannot be a method parameter or return types
-    //public void testVar(var i) {
+    //public void runFeature(var i) {
 
     public void runFeature() {
-        // must be initialized
+        // must be initialized, so this won't work
         //var t;
 
         var x = 250;
@@ -33,5 +37,12 @@ public class VarKeyword {
         System.out.println(z);
         System.out.println(p);
         System.out.println(q);
+
+        var aFileProc = new FileProcessor();
+        var aDirProc = new DirectoryProcessor();
+        Processor aProc = aFileProc;
+        System.out.println("Is a File Processor: " + (aProc instanceof FileProcessor));
+        aProc = aDirProc;
+        System.out.println("Is a Dir Processor: " + (aProc instanceof DirectoryProcessor));
     }
 }

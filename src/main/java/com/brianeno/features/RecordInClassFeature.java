@@ -1,16 +1,17 @@
 package com.brianeno.features;
 
-import com.brianeno.features.model.Sensor;
-
 /*
-  Shows example of Records, see class Sensor
+  Shows example of a Record declared in a class
 */
-public class RecordFeature {
+record SensorValue(int id, String name, String makeAndModel) {
+}
+
+public class RecordInClassFeature {
 
     public void runFeature() {
 
         // using Sensor record
-        Sensor s1 = new Sensor(1, "sensor a", "acme x");
+        SensorValue s1 = new SensorValue(2, "sensor b", "acme corp");
         System.out.println(s1.toString());
         System.out.println(s1.id());
         System.out.println(s1.name());

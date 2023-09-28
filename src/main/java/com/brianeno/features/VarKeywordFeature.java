@@ -4,6 +4,9 @@ import com.brianeno.features.model.DirectoryProcessor;
 import com.brianeno.features.model.FileProcessor;
 import com.brianeno.features.model.Processor;
 
+/*
+    Demonstrates us of var keyword
+ */
 public class VarKeywordFeature {
 
     // this is not allowed as class variable

@@ -11,5 +11,6 @@ public class VirtualThreadFeatureTest {
     public void testFeature() {
         VirtualThreadFeature feature = new VirtualThreadFeature();
         feature.runFeature();
+        feature.runFeatureExecutor();
     }
 }
